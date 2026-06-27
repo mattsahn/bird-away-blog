@@ -1,7 +1,6 @@
 ---
 layout: home
 ---
-<img width="250" alt="image" src="https://github.com/user-attachments/assets/51d76a95-e8b6-47e1-b92c-d38c6e815195"/>
 
 ![Bird detection event](https://github.com/user-attachments/assets/2fb09415-a968-4a3c-9c0a-fbbbb147f2fd)
 
