@@ -3,6 +3,9 @@ layout: home
 ---
 <img width="250" alt="image" src="https://github.com/user-attachments/assets/51d76a95-e8b6-47e1-b92c-d38c6e815195"/>
 
+![Bird detection event](https://github.com/user-attachments/assets/2fb09415-a968-4a3c-9c0a-fbbbb147f2fd)
+
+
 # AI-Powered Bird Sprinkler #
 *June 27, 2026*
 
@@ -30,10 +33,6 @@ Simple. Have a camera pointed at the pool, take pics in a loop, have AI analyze 
 ## How It Works
 
 A Python process runs on the Pi and is set to start itself whenever the Pi starts, so that it is resilient to power restart. It connects to the IP camera using RTSP protocol and captures an image every 2 mins. It posts this to OpenRouter as an API call along with a prompt asking if there is a bird in the picture. The AI model will respond with either "yes" or "no". If "yes", then the service will start recording a video clip, sleep for a few seconds, then power on the sprinkler relay, keep it on for 5 seconds, keep recording a few more seconds, and then post the image and video to an S3 bucket. 
-
-![Bird detection event](https://github.com/user-attachments/assets/2fb09415-a968-4a3c-9c0a-fbbbb147f2fd)
-
-*A snapshot from a detection event — the frame that triggered the spray*
 
 ## Cloud Stuff
 
