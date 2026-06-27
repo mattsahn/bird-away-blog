@@ -1,13 +1,10 @@
 ---
 layout: home
-title: Bird Away&#58; Building an AI-Powered Bird Deterrent with Raspberry Pi and Claude
 ---
-
-*June 2026 · [Source on GitHub](https://github.com/mattsahn/bird-away)*
-
 <img width="250" alt="image" src="https://github.com/user-attachments/assets/51d76a95-e8b6-47e1-b92c-d38c6e815195"/>
 
-## The Problem
+# AI-Powered Bird Sprinkler #
+*June 27, 2026*
 
 I live in NYC and my parents live in Florida and have a pool. The pool attracts a lot of birds and it was getting to be a bit of a problem with their associated output. We tried a few things (fake owl, floating alligator head) to keep them away, but birds are smart and determined and those did not work for very long. When I was there, I would sometimes sneak up on them with a hose and that would scatter them pretty effectively (except for one large duck that seemed to enjoy being drenched by a hose). So, I had the idea of automating this process as a fun project.
 
