@@ -8,7 +8,7 @@ layout: home
 # AI-Powered Bird Sprinkler #
 *June 27, 2026*
 
-I live in NYC and my parents live in Florida and have a pool. The pool attracts a lot of birds and it was getting to be a bit of a problem with their associated output. We tried a few things (fake owl, floating alligator head) to keep them away, but birds are smart and determined and those did not work for very long. When I was there, I would sometimes sneak up on them with a hose and that would scatter them pretty effectively (except for one large duck that seemed to enjoy being drenched by a hose). So, I had the idea of automating this process as a fun project.
+I live in NYC and my parents have a house in Florida with a pool. The pool attracts a lot of birds and it was getting to be a bit of a problem with their associated output. We tried a few things (fake owl, floating alligator head) to keep them away, but birds are smart and determined and those did not work for very long. When I was there, I would sometimes sneak up on them with a hose and that would scatter them pretty effectively (except for one large duck that seemed to enjoy being drenched by a hose). So, I had the idea of automating this process as a fun project.
 
 <img width="300" alt="image" src="https://github.com/user-attachments/assets/23a3e7f7-ade3-4e8c-ae86-2d5e2b06924d" />
 
