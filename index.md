@@ -5,17 +5,19 @@ title: Bird Away&#58; Building an AI-Powered Bird Deterrent with Raspberry Pi an
 
 *June 2026 · [Source on GitHub](https://github.com/mattsahn/bird-away)*
 
-![Bird Away](https://github.com/user-attachments/assets/51d76a95-e8b6-47e1-b92c-d38c6e815195)
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/51d76a95-e8b6-47e1-b92c-d38c6e815195"/>
 
 ## The Problem
 
 I live in NYC and my parents live in Florida and have a pool. The pool attracts a lot of birds and it was getting to be a bit of a problem with their associated output. We tried a few things (fake owl, floating alligator head) to keep them away, but birds are smart and determined and those did not work for very long. When I was there, I would sometimes sneak up on them with a hose and that would scatter them pretty effectively (except for one large duck that seemed to enjoy being drenched by a hose). So, I had the idea of automating this process as a fun project.
 
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/23a3e7f7-ade3-4e8c-ae86-2d5e2b06924d" />
+
 ## The Idea
 
 Simple. Have a camera pointed at the pool, take pics in a loop, have AI analyze the pic and return "yes" if there are birds in the pic, trigger a sprinkler with relay via GPIO on a Raspberry Pi. For extra credit, also save pics/video to the cloud so that I can get the satisfaction of seeing it work.
 
-![Hardware chain](https://github.com/user-attachments/assets/c858b5ad-f7e6-4a01-8866-c37de9c4c621)
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/c858b5ad-f7e6-4a01-8866-c37de9c4c621"/>
 
 ## The Hardware
 
@@ -26,7 +28,7 @@ Simple. Have a camera pointed at the pool, take pics in a loop, have AI analyze 
 - **Sprinkler head** — connected to water supply, aimed at pool
 - **Status LED button** — heartbeat-blinks while the service is running to give positive indication IRL. Also can trigger a manual run.
 
-![Pi enclosure](https://github.com/user-attachments/assets/63336784-0bd0-4567-83ed-71b2f77b96e4)
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/63336784-0bd0-4567-83ed-71b2f77b96e4"/>
 
 ## How It Works
 
@@ -43,7 +45,7 @@ For remote access, I use [Raspberry Pi Connect](https://connect.raspberrypi.com/
 For visual evidence, the process will upload the still image when bird detection triggered and a video to Cloudflare R2 service which has a generous free tier. 
 For ease of viewing, I created a simple webpage that organizes and displays all the snaphsots and links to videos so that I can check from my phone anytime. The page is deployed on Vercel, also free.
 
-![Event dashboard](https://github.com/user-attachments/assets/b501166a-2edc-4928-a1f7-470b0a64b1cd)
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/b501166a-2edc-4928-a1f7-470b0a64b1cd"/>
 
 *The web dashboard: each card is a detection with a thumbnail, timestamp, and link to the video clip*
 
@@ -62,6 +64,10 @@ But, I needed that heat to not accumlate inside of the plastic enclosure, but al
 For good measure, I added some reflective tape as well to bounce off the most intense direct sunlight:
 
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/9156d836-34f6-472a-9217-86af6f418b74" />
+
+The Pi will tell you the temp of the processor, but I also want to know the ambient temp inside the enclosure, so I added a temperature/humidity sensor, which lets me see that. My goal is for processor to stay under 140°F and for enclosure to stay under 120°F or so, then all is well.
+
+<img width="400" src="https://github.com/user-attachments/assets/e01f3465-2399-43e1-896d-19a77ed7722c" />
 
 
 ### Zero SD card writes
@@ -82,7 +88,7 @@ Picking and tuning an AI model ended up being a project in itself. This system r
 
 <img width="850" alt="image" src="https://github.com/user-attachments/assets/de2cf6c7-adcb-40eb-9d71-aea3b9ea3791" />
 
-*OpenRouter billing page*
+*OpenRouter billing page. Look how cheap!*
 
 My prompt:
 ```
@@ -94,9 +100,9 @@ My prompt:
 
 ## Results
 
-The thing works! It's detecting and spraying birds and (usually) shooing them away. Ducks are tricky. They DGAF about being sprayed for the most part. I guess being comfortable with water is kind of their thing, so i'm thinking of other deterrents I might add - like a blast of ultrasonic sounds or something.  
+The thing works! It's detecting and spraying birds and (usually) shooing them away. Ducks are tricky. They DGAF about being sprayed for the most part. I guess being comfortable with water is kind of their thing, so i'm thinking of other deterrents I might add to complement - like a blast of ultrasonic sounds or something. What i'm most looking for is reliability and so far, so good.
 
-The full source, wiring notes, install instructions, and tuning guide are at [github.com/mattsahn/bird-away](https://github.com/mattsahn/bird-away).
+Full source code and much more detail here: [github.com/mattsahn/bird-away](https://github.com/mattsahn/bird-away).
 
 ---
 
