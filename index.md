@@ -1,11 +1,7 @@
 ---
 layout: home
 ---
-
-![Bird detection event](https://github.com/user-attachments/assets/2fb09415-a968-4a3c-9c0a-fbbbb147f2fd)
-
-
-
+<img width="550" height="309" alt="event-20260622T192023Z (1)" src="https://github.com/user-attachments/assets/22e46a24-b9e5-497c-8034-d4d7e15a9852" />
 
 # AI-Powered Bird Sprinkler #
 *June 27, 2026*
