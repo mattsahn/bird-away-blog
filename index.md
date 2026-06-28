@@ -5,6 +5,8 @@ layout: home
 ![Bird detection event](https://github.com/user-attachments/assets/2fb09415-a968-4a3c-9c0a-fbbbb147f2fd)
 
 
+
+
 # AI-Powered Bird Sprinkler #
 *June 27, 2026*
 
@@ -96,6 +98,8 @@ My prompt:
 ## Results
 
 The thing works! It's detecting and spraying birds and (usually) shooing them away. Ducks are tricky. They DGAF about being sprayed for the most part. I guess being comfortable with water is kind of their thing, so i'm thinking of other deterrents I might add to complement - like a blast of ultrasonic sounds or something. What i'm most looking for is reliability and so far, so good.
+
+<img width="500" height="281" alt="event-20260623T115434Z" src="https://github.com/user-attachments/assets/993c26fb-0da7-44e7-9397-454f4b64cff8" />
 
 Full source code and much more detail here: [github.com/mattsahn/bird-away](https://github.com/mattsahn/bird-away).
 
