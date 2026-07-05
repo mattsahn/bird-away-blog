@@ -14,9 +14,8 @@ I live in NYC and my parents have a house in Florida with a pool. The pool attra
 
 Simple. Have a camera pointed at the pool, take pics in a loop, have AI analyze the pic and return "yes" if there are birds in the pic, trigger a sprinkler with relay via GPIO on a Raspberry Pi. For extra credit, also save pics/video to the cloud so that I can get the satisfaction of seeing it work.
 
-<img width="1000" alt="image" src="https://github.com/user-attachments/assets/c858b5ad-f7e6-4a01-8866-c37de9c4c621"/>
-
 ## The Hardware
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/c858b5ad-f7e6-4a01-8866-c37de9c4c621"/>
 
 - **Raspberry Pi 4** on home Wi-Fi — runs the Python monitoring service
 - **IP camera** — aimed at the pool, connected on same Wi-Fi network
@@ -26,6 +25,8 @@ Simple. Have a camera pointed at the pool, take pics in a loop, have AI analyze 
 - **Status LED button** — heartbeat-blinks while the service is running to give positive indication IRL. Also can trigger a manual run.
 
 <img width="300" alt="image" src="https://github.com/user-attachments/assets/63336784-0bd0-4567-83ed-71b2f77b96e4"/>
+
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/aa26cb35-6fa8-4c12-9c2f-851a41b17e27" />
 
 ## How It Works
 
