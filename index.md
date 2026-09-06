@@ -1,12 +1,16 @@
 ---
 layout: home
 ---
-<img width="550" height="309" alt="event-20260622T192023Z (1)" src="https://github.com/user-attachments/assets/22e46a24-b9e5-497c-8034-d4d7e15a9852" />
+<img width="500" height="338" alt="4-bird" src="https://github.com/user-attachments/assets/50957287-45ce-4bf3-ae8f-86ba9e24b8e2" /><img width="500" height="338" alt="7-bird" src="https://github.com/user-attachments/assets/77dae42c-2bf5-4a30-befd-cdd7b9bc6538" />
+
+
 
 # AI-Powered Bird Sprinkler #
-*June 27, 2026*
+*June 27, 2026*   
 
 code: https://github.com/mattsahn/bird-away
+
+\** [9/6/2026 update] - It has been running for nearly 3 months pretty flawlessly. I have impressed myself with its resiliency. I have done a few significant updates. I noticed it missing birds that were at the back of the pool and pretty small in the image. So, I needed to increase the vision/model accuracy, which meant more cost. Higher resolution images and/or better models. I first switched to google/gemini-3-flash-preview which fixed the issue of missing birds, but cost went up 10x to about $6/month. That was too much to stomach, so I (my agent) did a more extensive model evaluation and found bytedance-seed/seed-2.0-mini would get the same accuracy at 25% the cost. I also was getting some false positives for birds that the camera could see on the lake in the distance, so had to add some detail to the prompt to exclude those. And, lastly, we were having iguanas eating our new flowers, so it's now bird-and-iguana-away, technically, and working well.
 
 I live in NYC and my parents have a house in Florida with a pool. The pool attracts a lot of birds and it was getting to be a bit of a problem with their associated output. We tried a few things (fake owl, floating alligator head) to keep them away, but birds are smart and determined and those did not work for very long. When I was there, I would sometimes sneak up on them with a hose and that would scatter them pretty effectively (except for one large duck that seemed to enjoy being drenched by a hose). So, I had the idea of automating this process as a fun project.
 
